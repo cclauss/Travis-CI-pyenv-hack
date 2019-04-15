@@ -32,8 +32,6 @@ script:
   - python3 --version && true  
   - python --version ; pip --version ; pyenv version
   - pyenv versions
+  - pyenv install --list
   - pip install --upgrade pip
-  - pip install --upgrade pyenv
-  - python --version ; pip --version ; pyenv version
-  - pyenv versions
- 
+  - # pip install --upgrade pyenv # Can't be done :-(
