@@ -30,7 +30,8 @@ script:
   - python --version && true
   - python2 --version && true
   - python3 --version && true  
-  - python --version ; pip --version ; pyenv version
+  - python --version ; pip --version ; pyenv --version
+  - pyenv version
   - pyenv versions
   - pyenv install --list
   # - pyenv update
