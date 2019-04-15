@@ -1,0 +1,39 @@
+language: python
+
+matrix:
+  include:
+    - name: "Python 2.7 on Trusty"
+      python: 2.7
+    - name: "Python 3.5 on Trusty"
+      python: 3.5
+    - name: "Python 3.6 on Trusty"
+      python: 3.6
+    - name: "Non-python on Trusty"
+      language: node_js
+    - name: "Python 2.7 on Xenial"
+      python: 2.7
+      dist: xenial
+    - name: "Python 3.5 on Xenial"
+      python: 3.5
+      dist: xenial
+    - name: "Python 3.6 on Xenial"
+      python: 3.6
+      dist: xenial
+    - name: "Python 3.7 on Xenial"
+      python: 3.7
+      dist: xenial
+    - name: "Non-python on Xenial"
+      language: node_js
+      dist: xenial
+
+script:
+  - python --version && true
+  - python2 --version && true
+  - python3 --version && true  
+  - python --version ; pip --version ; pyenv version
+  - pyenv versions
+  - pip install --upgrade pip
+  - pip install --upgrade pyenv
+  - python --version ; pip --version ; pyenv version
+  - pyenv versions
+ 
