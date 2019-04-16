@@ -2,6 +2,7 @@ language: python
 
 matrix:
   include:
+    - name "Default Python on Trusty"
     - name: "Python 2.7 on Trusty"
       python: 2.7
     - name: "Python 3.5 on Trusty"
@@ -13,6 +14,7 @@ matrix:
     - name: "Python 2.7 on Xenial"
       python: 2.7
       dist: xenial
+    - name "Default Python on Xenial"
     - name: "Python 3.5 on Xenial"
       python: 3.5
       dist: xenial
